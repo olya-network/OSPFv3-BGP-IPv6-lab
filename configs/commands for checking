@@ -1,0 +1,31 @@
+! OSPFv2 check:
+bash
+show ip ospf neighbor
+show ip ospf interface brief
+show ip route ospf
+
+! OSPFv3 check:
+bash
+show ipv6 ospf neighbor
+show ipv6 ospf interface brief
+show ipv6 route ospf
+
+! BGP check:
+bash
+show ip bgp summary
+show ip bgp
+show ip route bgp
+
+! Checking interfaces:
+bash
+show ip interface brief
+show ipv6 interface brief
+show interfaces description
+
+! Connectivity check:
+bash
+ping 8.8.8.8
+ping 10.2.2.10
+ping 2001:DB8::8
+ping 2001:DB8:CAFE:B::10
+traceroute 8.8.8.8
